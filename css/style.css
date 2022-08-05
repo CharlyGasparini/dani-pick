@@ -433,6 +433,20 @@ a:hover {
   background-size: cover;
 }
 
+.btnp input {
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-weight: inherit;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+}
+
+.contact__map {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  height: 700px;
+}
+
 .footer-sm {
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
 }

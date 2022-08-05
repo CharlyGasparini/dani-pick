@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- LINK FUENTE DE CDN Fonts -->
+    <link href="http://fonts.cdnfonts.com/css/kiona-2" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <!-- LINK FUENTE DE GOOGLE Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <!-- LINK DE FAVICON -->
+    <link rel="shortcut icon" href="img/dot-favicon.png" type="image/x-icon">
+    <!-- LINK DE ICONOS FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/0fd635b4e8.js" crossorigin="anonymous"></script>
+    <!-- LINK ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>DANIPICK - Contacto</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg text-bg-dark fw-bold fixed-top opacity-75">
+        
+        <div class="container">
+          
+            <a class="navbar__logo navbar-brand" href="../index.html">
+                <img src="../img/logo_danipick.png" alt="logo de DANIPICK">
+            </a>
+            
+            <button class="navbar__button navbar-toggler border-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar__nav-menu navbar-nav ms-auto mt-3 mt-lg-0">
+                    <li class="navbar__nav-item me-5">
+                        <a class="navbar__nav-link" aria-current="page" href="sobre-mi.html">SOBRE MI</a>
+                    </li>
+                    <li class="navbar__nav-item me-5 mt-3 mt-lg-0">
+                        <a class="navbar__nav-link" aria-current="page" href="proyectos.html">PROYECTOS</a>
+                    </li>
+                    <li class="navbar__nav-item me-5 mt-3 mt-lg-0">
+                        <a class="navbar__nav-link" aria-current="page" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="navbar__nav-item mt-3 mt-lg-0">
+                        <a class="navbar__nav-link" aria-current="page" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header id="top" class="hero hero-sec text-white position-relative d-flex flex-column text-center justify-content-center">
+
+        <h1 class="hero__title animate__animated animate__fadeInDown">CONTACTO</h1>
+        
+        <div class="hero__down-sign position-absolute bottom-0 w-100 animate__animated animate__fadeIn animate__delay-1s">
+            <i class="fa-solid fa-chevron-down"></i>
+            <p>DESLICE HACIA ABAJO</p>
+        </div>
+        
+    </header>
+    
+    <main>
+
+        <section class="contact">
+
+            <p class="contact__desc col-lg-8 col-xxl-6 mx-auto my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur illo ad. Minima recusandae rem, eaque asperiores quos quaerat vel explicabo porro nemo consequatur delectus minus unde accusantium ratione vitae.</p>
+            
+            <h2 class="contact__subtitle mb-5 text-center">FORMULARIO DE CONTACTO</h2>
+            
+            <div class="container row mx-auto g-lg-5">
+                
+                
+                <div class="contact__form col-lg-6">    
+    
+                    <form action="" class="contact__form mb-5">
+
+                        <legend class="mb-3">Los campos con * son obligatorios</legend>
+                        
+                        <div class="contact-input-group form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="John Doe" required>
+                            <label for="floatingInput">*Nombre</label>
+                        </div>
+                        
+                        <div class="contact-input-group form-floating mb-3">
+                            <input type="tel" class="form-control" id="floatingInput" placeholder="555-5555" required>
+                            <label for="floatingInput">*Teléfono</label>
+                        </div>
+                        
+                        <div class="contact-input-group form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="john@doe.com" required>
+                            <label for="floatingInput">*E-mail</label>
+                        </div>
+
+                        <div class="contact-select form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                              <option selected>*Elige un servicio</option>
+                              <option value="1">Asesoría Básica</option>
+                              <option value="2">Asesoría Completa</option>
+                              <option value="3">Asesoría Premium</option>
+                              <option value="4">Curso Photoshop</option>
+                              <option value="5">Curso 3dsMax + Vray</option>
+                              <option value="6">Curso Rendering completo</option>
+                            </select>
+                            <label for="floatingSelect">Tipos de servicio</label>
+                        </div>
+
+                        <label for="checkbox">Ambientes a remodelar:</label>
+                        <div class="form-check">
+                            <input class="contact__check form-check-input" type="checkbox" value="comedor">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Comedor
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="contact__check form-check-input" type="checkbox" value="cocina">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Cocina
+                            </label>
+                        </div>
+
+                        <div class="contact__check form-check">
+                            <input class="form-check-input" type="checkbox" value="cocina-comedor">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Cocina-Comedor
+                            </label>
+                        </div>
+
+                        <div class="contact__check form-check">
+                            <input class="form-check-input" type="checkbox" value="baño">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Baño
+                            </label>
+                        </div>
+
+                        <div class="contact__check form-check">
+                            <input class="form-check-input" type="checkbox" value="sala de estar">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Sala de estar
+                            </label>
+                        </div>
+
+                        <div class="contact__check form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="dormitorio">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Dormitorio
+                            </label>
+                        </div>
+
+                        <div class="contact__textarea form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" maxlength="180"></textarea>
+                            <label for="floatingTextarea2">Consulta (máximo 180 caracteres):</label>
+                        </div>
+                            
+                        <button class="btnp contact__submit-btn position-relative mb-3 mb-lg-0">
+                            <input type="submit" class="contact__form-button" value="ENVIAR">
+                        </button>
+
+                        <button class="btnp contact__reset-btn position-relative mb-3 mb-lg-0">
+                            <input type="reset" class="contact__form-button" value="BORRAR">
+                        </button>
+                    </form>
+
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.051297550148!2d-58.31934884866129!3d-34.70388607021706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333866b1d62ef%3A0x15d3a62485a30013!2sMitre%20Y%20Las%20Flores!5e0!3m2!1ses!2sar!4v1655861829260!5m2!1ses!2sar" class="contact__map col-lg-6 mb-5 my-lg-auto p-0 mx-auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer-sm text-bg-secondary position-relative  text-center p-3">
+
+        <a href="#top" class="footer-sm__up-btn">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        
+        <div class="container d-flex flex-wrap-reverse justify-content-center justify-content-sm-between">
+
+            <span>
+                Sitio creado por 
+                <a href="mailto:crgasparini32@gmail.com">Carlos R. Gasparini</a>&copy;
+            </span>
+
+            <div class="footer-sm__list">
+
+                <a href="https://www.instagram.com/soypick/?hl=es-la" class="footer-sm__icon me-2" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+    
+                <a href="https://twitter.com/la_de_rulitos" class="footer-sm__icon me-2" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+    
+                <a href="https://www.facebook.com" class="footer-sm__icon me-2" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+    
+                <a href="https://www.twitch.tv/la_de_rulitos" class="footer-sm__icon" target="_blank">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+
+            </div>
+
+        </div>
+    
+    </footer>
+    
+    <!-- SCRIPT DE JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- SCRIPT DE EJECUCIÓN AOS -->
+    <script>
+        AOS.init();
+    </script>
+    
+    <!-- SCRIPT JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
