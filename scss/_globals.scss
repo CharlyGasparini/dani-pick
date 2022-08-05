@@ -5,13 +5,20 @@
     box-sizing: border-box;
 }
 
-html{
+body{
 
-    font-size: 14px;
+    background-color: whitesmoke;
 }
 
-body{
-    background-color: whitesmoke;
+h1,h2,h3,h4{
+
+    font-family: $title-font;
+    font-weight: bold;
+}
+
+p{
+
+    font-family: $text-font;
 }
 
 .fa-solid,
