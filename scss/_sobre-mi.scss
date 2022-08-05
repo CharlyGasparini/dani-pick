@@ -1,0 +1,46 @@
+.about-me__cartoon-img{
+
+    max-width: 400px;
+}
+
+.about-me__interest{
+    background-color: $rosa-pick;
+    box-shadow: $lat-shadow;
+}
+
+.about-me__progress-bar{
+
+    position: relative;
+    border: 3px solid $gris-pick;
+    z-index: 1;
+
+    .about-me__progress-cont-90{
+
+        width: 90%;
+        height: 100%;
+        background-color: $rosa-pick;
+    }
+
+    .about-me__progress-cont-80{
+
+        width: 80%;
+        height: 100%;
+        background-color: $rosa-pick;
+    }
+
+    .about-me__progress-cont-75{
+
+        width: 75%;
+        height: 100%;
+        background-color: $rosa-pick;
+    }
+
+    .about-me__progress-cont-60{
+
+        width: 60%;
+        height: 100%;
+        background-color: $rosa-pick;
+    }
+}
+
+
