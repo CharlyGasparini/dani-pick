@@ -108,8 +108,9 @@ a:hover {
   height: 50vh;
 }
 
-.filosophy__dany-img {
-  max-width: 400px;
+.filosophy,
+.how-work {
+  height: 80vh;
 }
 
 .clients {
