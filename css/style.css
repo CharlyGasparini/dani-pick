@@ -352,6 +352,87 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.services__service-card {
+  overflow: hidden;
+  width: 100%;
+  min-height: 300px;
+}
+.services__service-card h3 {
+  z-index: 1;
+  transition: all 0.3s ease-in 0.1s;
+}
+.services__service-card:hover {
+  transform: scale(1.05, 1.05);
+  z-index: 1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+.services__service-card:hover h3 {
+  transform: scale(1.05, 1.05);
+}
+.services__service-card:hover::after {
+  animation: bg-gradient 0.3s ease-in-out forwards;
+}
+.services__service-card::after {
+  position: absolute;
+  content: "";
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+@keyframes bg-gradient {
+  33.33% {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%);
+  }
+  66.66% {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 50%);
+  }
+  100% {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 25%);
+  }
+}
+.services__advisory .services__service-card:first-child {
+  background: url(../img/basic-advisory-img.png);
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.services__advisory .services__service-card:nth-child(2) {
+  background: url(../img/complete-advisory-img.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.services__advisory .services__service-card:last-child {
+  background: url(../img/premium-advisory-img.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.services__courses .services__service-card:first-child {
+  background: url(../img/basic-course-img.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.services__courses .services__service-card:nth-child(2) {
+  background: url(../img/complete-course-img.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.services__courses .services__service-card:last-child {
+  background: url(../img/premium-course-img.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
 .footer-sm {
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
 }
