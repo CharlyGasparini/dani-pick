@@ -88,7 +88,6 @@ a:hover {
 }
 
 .hero {
-  height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,6 +97,14 @@ a:hover {
 .hero .hero__down-sign .fa-chevron-down {
   margin-bottom: 1rem;
   animation: shakeY 10s infinite;
+}
+
+.hero-main {
+  height: 100vh;
+}
+
+.hero-sec {
+  height: 50vh;
 }
 
 .filosophy__dany-img {
@@ -121,6 +128,41 @@ a:hover {
   width: 100%;
   text-align: end;
   color: #d9d9d9;
+}
+
+.about-me__cartoon-img {
+  max-width: 400px;
+}
+
+.about-me__interest {
+  background-color: #f1c3d9;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-me__progress-bar {
+  position: relative;
+  border: 3px solid #d9d9d9;
+  z-index: 1;
+}
+.about-me__progress-bar .about-me__progress-cont-90 {
+  width: 90%;
+  height: 100%;
+  background-color: #f1c3d9;
+}
+.about-me__progress-bar .about-me__progress-cont-80 {
+  width: 80%;
+  height: 100%;
+  background-color: #f1c3d9;
+}
+.about-me__progress-bar .about-me__progress-cont-75 {
+  width: 75%;
+  height: 100%;
+  background-color: #f1c3d9;
+}
+.about-me__progress-bar .about-me__progress-cont-60 {
+  width: 60%;
+  height: 100%;
+  background-color: #f1c3d9;
 }
 
 .footer-sm {
