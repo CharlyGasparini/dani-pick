@@ -1,6 +1,5 @@
 .hero{
 
-    height: 100vh;
     background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/banner.jpg);
     background-size: cover;  
     background-repeat: no-repeat;
@@ -15,4 +14,14 @@
             animation: shakeY  10s infinite;
         }
     }
+}
+
+.hero-main{
+
+    height: 100vh;
+}
+
+.hero-sec{
+
+    height: 50vh;
 }
