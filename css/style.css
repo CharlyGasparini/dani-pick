@@ -1,0 +1,156 @@
+@media (min-width: 992px) {
+  .filosophy,
+.how-work {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.fa-solid,
+.fa-brands {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: rgb(238, 124, 179);
+  transition: all 0.3s ease-in-out;
+}
+
+.btnp {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kiona", sans-serif;
+  font-weight: bold;
+  background-color: #d9d9d9;
+  border: #f1c3d9 solid 5px;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+.btnp span {
+  position: relative;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+}
+.btnp:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.btnp::after {
+  position: absolute;
+  content: "";
+  background-color: #f1c3d9;
+  border-radius: 0 0 75px 75px;
+  height: 200%;
+  width: 100%;
+  top: -80px;
+  transition: all 0.3s ease-in-out;
+}
+.btnp:hover::after {
+  transform: scale(3);
+}
+
+.navbar {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.navbar .navbar__logo {
+  transition: all 0.3s ease-in;
+}
+.navbar .navbar__logo img {
+  width: 7rem;
+}
+.navbar .navbar__logo:hover {
+  animation: pulse 1s infinite;
+}
+.navbar .navbar__nav-item:hover {
+  animation: pulse 1s infinite;
+  transition: all 0.3s ease-in;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.hero .hero__down-sign .fa-chevron-down {
+  margin-bottom: 1rem;
+  animation: shakeY 10s infinite;
+}
+
+.filosophy__dany-img {
+  max-width: 400px;
+}
+
+.clients {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/parallax-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fa-quote-left {
+  width: 100%;
+  text-align: start;
+  color: #d9d9d9;
+}
+
+.fa-quote-right {
+  width: 100%;
+  text-align: end;
+  color: #d9d9d9;
+}
+
+.footer-sm {
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
+}
+.footer-sm .container::after {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #f1c3d9;
+  width: 100%;
+  height: 50%;
+  margin: 10px 0;
+}
+.footer-sm .fa-chevron-up:hover {
+  color: rgb(238, 124, 179);
+  animation: shakeY 10s infinite;
+}
+.footer-sm .footer-sm__icon i:hover {
+  animation: pulse 1s infinite;
+  transition: all 0.3s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */

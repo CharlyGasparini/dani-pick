@@ -1,0 +1,81 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+    font-size: 14px;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.fa-solid,
+.fa-brands{
+    
+    font-size: 2rem;
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+    
+        color: $rosa-pick-mark;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.btnp{
+
+    position: relative;
+    width: 100px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kiona", sans-serif;
+    font-weight: bold;
+    background-color: $gris-pick;
+    border: $rosa-pick solid 5px;
+    border-radius: 3rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+
+    & span{
+
+        position: relative;
+        z-index: 1;
+        transition: all 0.1s ease-out;
+    }
+
+    &:hover{
+
+        box-shadow: $lat-shadow;
+        font-weight: bold;
+    }
+
+    &::after{
+
+        position: absolute;
+        content: "";
+        background-color: $rosa-pick;
+        border-radius: 0 0 75px 75px;
+        height: 200%;
+        width: 100%;
+        top: -80px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after{
+
+        transform: scale(3);
+    }
+}

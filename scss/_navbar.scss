@@ -1,0 +1,28 @@
+.navbar{
+
+    box-shadow: $down-shadow;
+    
+    .navbar__logo{
+
+        transition: all 0.3s ease-in;
+        
+        img{
+    
+            width: 7rem;
+        }
+        
+        &:hover{
+
+            animation: pulse 1s infinite;  
+        }
+    }
+
+    .navbar__nav-item{
+
+        &:hover{
+
+            animation: pulse 1s infinite;  
+            transition: all 0.3s ease-in;
+        }
+    }
+}

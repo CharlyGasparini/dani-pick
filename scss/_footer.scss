@@ -1,0 +1,27 @@
+.footer-sm{
+
+    box-shadow: $up-shadow;
+
+    & .container::after{
+
+        content: "";
+        position: relative;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid $rosa-pick;
+        width: 100%;
+        height: 50%;
+        margin: 10px 0;
+        
+    }
+
+    .fa-chevron-up:hover{
+        color:  $rosa-pick-mark;
+        animation: shakeY  10s infinite;
+    }
+
+    .footer-sm__icon i:hover{
+        animation: pulse 1s infinite;
+        transition: all 0.3s ease-in;
+    }
+}
