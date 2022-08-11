@@ -10,12 +10,12 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Kiona", "Helvetica Neue", "Montserrat", sans-serif;
+  font-family: "Kiona", "Montserrat", sans-serif;
   font-weight: bold;
 }
 
 p {
-  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", "Roboto", sans-serif;
 }
 
 .fa-solid,
