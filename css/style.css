@@ -10837,7 +10837,7 @@ a:hover {
   transition: all 0.3s ease-in;
 }
 .navbar .navbar__logo img {
-  width: 7rem;
+  width: 8rem;
 }
 .navbar .navbar__logo:hover {
   animation: pulse 1s infinite;
@@ -10854,6 +10854,9 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.hero img {
+  width: 3rem;
 }
 .hero .hero__down-sign .fa-chevron-down {
   margin-bottom: 1rem;
