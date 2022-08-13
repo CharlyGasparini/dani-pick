@@ -1,4 +1,5 @@
 .btnp input{
+
     border: none;
     background: none;
     font-family: inherit;
@@ -8,6 +9,7 @@
 }
 
 .contact__map{
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+    box-shadow: map-get($shadows, "lat");
     height: 700px;
 }

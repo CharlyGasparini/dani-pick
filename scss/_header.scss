@@ -1,27 +1,11 @@
 .hero{
 
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/banner.jpg);
-    background-size: cover;  
-    background-repeat: no-repeat;
-    background-position: center; 
-    box-shadow: $down-shadow;
+    @include hero(100vh);
 
-    .hero__down-sign{
+}
+
+.hero--sec{
+
+    @include hero(50vh);
     
-        .fa-chevron-down{
-            
-            margin-bottom: 1rem;
-            animation: shakeY  10s infinite;
-        }
-    }
-}
-
-.hero-main{
-
-    height: 100vh;
-}
-
-.hero-sec{
-
-    height: 50vh;
 }

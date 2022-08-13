@@ -1,8 +1,10 @@
-$rosa-pick: #f1c3d9;
-$rosa-pick-mark: rgb(238, 124, 179);
-$gris-pick: #d9d9d9;
-$down-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-$up-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
-$lat-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);  
+$primary: #f1c3d9;
+$secondary: #d9d9d9;
+$success: rgb(238, 124, 179);
+$shadows:(
+    down: 0 5px 5px rgba(0, 0, 0, 0.3),
+    up: 0 -5px 5px rgba(0, 0, 0, 0.3),
+    lat: 5px 5px 5px rgba(0, 0, 0, 0.3)
+);
 $title-font: "Kiona", "Montserrat", sans-serif;
 $text-font: "Montserrat", "Roboto", sans-serif;

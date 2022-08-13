@@ -4,43 +4,40 @@
 }
 
 .about-me__interest{
-    background-color: $rosa-pick;
-    box-shadow: $lat-shadow;
+    background-color: $primary;
+    box-shadow: map-get($shadows, "lat");
 }
 
-.about-me__progress-bar{
+.about-me__soft-skill{
 
-    position: relative;
-    border: 3px solid $gris-pick;
-    z-index: 1;
-
-    .about-me__progress-cont-90{
-
-        width: 90%;
-        height: 100%;
-        background-color: $rosa-pick;
+    .about-me__progress-bar{
+    
+        position: relative;
+        border: 3px solid $secondary;
+        z-index: 1;
     }
 
-    .about-me__progress-cont-80{
+    @for $i from 2 through 5 {
+        
+        &:nth-child(#{$i}) .about-me__progress-cont{
 
-        width: 80%;
-        height: 100%;
-        background-color: $rosa-pick;
-    }
-
-    .about-me__progress-cont-75{
-
-        width: 75%;
-        height: 100%;
-        background-color: $rosa-pick;
-    }
-
-    .about-me__progress-cont-60{
-
-        width: 60%;
-        height: 100%;
-        background-color: $rosa-pick;
+            @if $i == 2 {
+        
+                @include progress(90%);
+    
+            } @else if $i == 3 {
+    
+                @include progress(80%);
+    
+            } @else if $i == 4 {
+    
+                @include progress(75%);
+            
+            } @else {
+    
+                @include progress(60%);
+            }
+        }
     }
 }
-
 

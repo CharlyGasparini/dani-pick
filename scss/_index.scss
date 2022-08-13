@@ -6,16 +6,25 @@
     background-size: cover;
 }
 
+.clients__test{
+    font-weight: lighter;
+}
+
+.clients__test--signature{
+    @extend .clients__test;
+    font-style: italic;
+}
+
 .fa-quote-left{
 
     width: 100%;
     text-align: start;
-    color: $gris-pick;
+    color: $secondary;
 }
 
 .fa-quote-right{
     
     width: 100%;
     text-align: end;
-    color: $gris-pick;
+    color: $secondary;
 }

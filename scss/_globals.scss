@@ -34,7 +34,7 @@ a{
 
     &:hover{
     
-        color: $rosa-pick-mark;
+        color: $success;
         transition: all 0.3s ease-in-out;
     }
 }
@@ -49,8 +49,8 @@ a{
     justify-content: center;
     font-family: "Kiona", sans-serif;
     font-weight: bold;
-    background-color: $gris-pick;
-    border: $rosa-pick solid 5px;
+    background-color: $secondary;
+    border: $primary solid 5px;
     border-radius: 3rem;
     cursor: pointer;
     overflow: hidden;
@@ -65,7 +65,7 @@ a{
 
     &:hover{
 
-        box-shadow: $lat-shadow;
+        box-shadow: map-get($shadows, "lat");
         font-weight: bold;
     }
 
@@ -73,7 +73,7 @@ a{
 
         position: absolute;
         content: "";
-        background-color: $rosa-pick;
+        background-color: $primary;
         border-radius: 0 0 75px 75px;
         height: 200%;
         width: 100%;

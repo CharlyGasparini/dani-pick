@@ -1,0 +1,31 @@
+@mixin div-img {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin hero($height) {
+    
+    height: $height;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/hero.jpg);
+    @include div-img;
+    box-shadow: map-get($shadows, "down");
+
+    .hero__down-sign{
+    
+        .fa-chevron-down{
+            
+            margin-bottom: 1rem;
+            animation: shakeY  10s infinite;
+        }
+    }
+}
+
+@mixin progress($width) {
+
+    width: $width;
+    height: 100%;
+    background-color: $primary;
+}
+

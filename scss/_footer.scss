@@ -1,6 +1,6 @@
 .footer-sm{
 
-    box-shadow: $up-shadow;
+    box-shadow: map-get($shadows, "up");
 
     & .container::after{
 
@@ -8,7 +8,7 @@
         position: relative;
         bottom: 0;
         left: 0;
-        border-top: 1px solid $rosa-pick;
+        border-top: 1px solid $success;
         width: 100%;
         height: 50%;
         margin: 10px 0;
@@ -16,7 +16,7 @@
     }
 
     .fa-chevron-up:hover{
-        color:  $rosa-pick-mark;
+        color:  $success;
         animation: shakeY  10s infinite;
     }
 

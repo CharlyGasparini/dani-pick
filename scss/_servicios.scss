@@ -2,7 +2,7 @@
 
     overflow: hidden;
     width: 100%;
-    min-height: 300px;
+    height: 350px;
 
     h3{
 
@@ -14,7 +14,7 @@
 
         transform: scale(1.05,1.05);
         z-index: 1;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: map-get($shadows, "lat");
         transition: all 0.3s ease-in;
 
         h3{
@@ -41,12 +41,12 @@
 
 @keyframes bg-gradient{
 
-    33.33%{
+    33%{
 
         background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 75%);
     }
 
-    66.66%{
+    66%{
 
         background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 50%);
     }
@@ -57,49 +57,26 @@
     }
 }
 
-.services__advisory .services__service-card:first-child{
-
-    background: url(../img/basic-advisory-img.png);
-    background-position: center center;
-    background-repeat: repeat;
-    background-size: cover;
-}
-
-.services__advisory .services__service-card:nth-child(2){
-
-    background: url(../img/complete-advisory-img.png);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-}
-
-.services__advisory .services__service-card:last-child{
-
-    background: url(../img/premium-advisory-img.png);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-}
-
-.services__courses .services__service-card:first-child{
+@for $i from 1 through 2 {
     
-    background: url(../img/basic-course-img.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-}
+    @for $j from 1 through 3 {
+        
+        @if $i == 1 {
+            
+            .services__advisory .services__service-card:nth-child(#{$j}){
 
-.services__courses .services__service-card:nth-child(2){
+                cursor: pointer;
+                overflow: hidden;
+                background-image: url(../img/advisory-img-#{$j}.jpg);
+                @include div-img;
+            }
+        } @else {
 
-    background: url(../img/complete-course-img.png);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-}
+            .services__courses .services__service-card:nth-child(#{$j}){
 
-.services__courses .services__service-card:last-child{
-
-    background: url(../img/premium-course-img.png);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+                background-image: url(../img/course-img-#{$j}.jpg);
+                @include div-img;
+            }
+        }
+    }
 }

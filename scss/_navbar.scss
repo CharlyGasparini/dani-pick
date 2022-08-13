@@ -1,6 +1,6 @@
 .navbar{
 
-    box-shadow: $down-shadow;
+    box-shadow: map-get($shadows, "down");
     
     .navbar__logo{
 
