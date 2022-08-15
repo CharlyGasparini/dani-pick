@@ -1,15 +1,32 @@
 .hero{
+    height: 100vh;
+    box-shadow: map-get($shadows, "down");
 
-    & img{
-        width: 3rem;
+    &::after{
+        content: "";
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
-    @include hero(100vh);
+    .hero__title{
+        z-index: 1;
+    }
 
-}
+    .hero__down-sign{
+        z-index: 1;
+        
+        .fa-chevron-down{   
+            margin-bottom: 1rem;
+            animation: shakeY  10s infinite;
+        }
+    }
 
-.hero--sec{
-
-    @include hero(50vh);
-    
+    .carousel{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
 }

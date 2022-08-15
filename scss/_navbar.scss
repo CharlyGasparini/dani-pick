@@ -1,28 +1,23 @@
 .navbar{
-
     box-shadow: map-get($shadows, "down");
     
     .navbar__logo{
-
-        transition: all 0.3s ease-in;
+        transition: $transition;
         
         img{
-    
             width: 8rem;
         }
         
         &:hover{
-
-            animation: pulse 1s infinite;  
+            animation: $anim-pulse;  
         }
     }
 
     .navbar__nav-item{
 
         &:hover{
-
-            animation: pulse 1s infinite;  
-            transition: all 0.3s ease-in;
+            animation: $anim-pulse;  
+            transition: $transition;
         }
     }
 }

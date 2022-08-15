@@ -1,10 +1,21 @@
+// COLORS
 $primary: #f1c3d9;
 $secondary: #d9d9d9;
 $success: rgb(238, 124, 179);
+$navbar-dark-color: white;
+$navbar-dark-hover-color: $success;
+
+// ANIMATION TRANSITIONS
+$transition: all 0.3s ease-in;
+$anim-pulse: pulse 1s infinite;
+
+// SHADOWS
 $shadows:(
     down: 0 5px 5px rgba(0, 0, 0, 0.3),
     up: 0 -5px 5px rgba(0, 0, 0, 0.3),
     lat: 5px 5px 5px rgba(0, 0, 0, 0.3)
 );
+
+// FONTS
 $title-font: "Kiona", "Montserrat", sans-serif;
 $text-font: "Montserrat", "Roboto", sans-serif;
