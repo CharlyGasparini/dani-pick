@@ -1,7 +1,7 @@
 .hero{
-    @include hero(100vh,block);
+    @include hero(90vh,block);
 }
 
 .hero--sec{
-    @include hero(50vh,none);
+    @include hero(40vh,none);
 }

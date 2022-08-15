@@ -6,12 +6,7 @@
     background-size: cover;
 }
 
-.clients__test{
-    font-weight: lighter;
-}
-
 .clients__test--signature{
-    @extend .clients__test;
     font-style: italic;
 }
 
