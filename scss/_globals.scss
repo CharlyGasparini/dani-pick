@@ -35,7 +35,7 @@ a{
     &:hover{
     
         color: $success;
-        transition: all 0.3s ease-in-out;
+        transition: $transition;
     }
 }
 

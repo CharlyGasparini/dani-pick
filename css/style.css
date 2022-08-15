@@ -10788,7 +10788,7 @@ a {
 }
 a:hover {
   color: rgb(238, 124, 179);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in;
 }
 
 .btnp {
@@ -10834,7 +10834,7 @@ a:hover {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 .navbar .navbar__logo {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 .navbar .navbar__logo img {
   width: 8rem;
@@ -10844,7 +10844,7 @@ a:hover {
 }
 .navbar .navbar__nav-item:hover {
   animation: pulse 1s infinite;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .hero {
@@ -11263,12 +11263,12 @@ a:hover {
   margin: 10px 0;
 }
 .footer-sm .fa-chevron-up:hover {
+  transition: all 0.2s ease-in;
   color: rgb(238, 124, 179);
   animation: shakeY 10s infinite;
 }
 .footer-sm .footer-sm__icon i:hover {
-  animation: pulse 1s infinite;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 @media (hover) {

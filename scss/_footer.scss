@@ -1,9 +1,7 @@
 .footer-sm{
-
     box-shadow: map-get($shadows, "up");
 
     & .container::after{
-
         content: "";
         position: relative;
         bottom: 0;
@@ -16,12 +14,12 @@
     }
 
     .fa-chevron-up:hover{
+        transition: $transition;
         color:  $success;
         animation: shakeY  10s infinite;
     }
 
     .footer-sm__icon i:hover{
-        animation: pulse 1s infinite;
-        transition: all 0.3s ease-in;
+        transition: $transition;
     }
 }
