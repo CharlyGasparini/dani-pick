@@ -10765,7 +10765,7 @@ textarea.form-control-lg {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -10875,7 +10875,7 @@ a:hover {
 }
 
 .hero--sec {
-  height: 40vh;
+  height: 50vh;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 .hero--sec::after {
@@ -10924,36 +10924,27 @@ a:hover {
   color: #d9d9d9;
 }
 
-.about-me__cartoon-img {
-  max-width: 400px;
-}
-
-.about-me__interest {
-  background-color: #f1c3d9;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-
 .about-me__soft-skill .about-me__progress-bar {
   position: relative;
   border: 3px solid #d9d9d9;
   z-index: 1;
 }
-.about-me__soft-skill:nth-child(2) .about-me__progress-cont {
+.about-me__soft-skill:nth-child(4) .about-me__progress-cont {
   width: 90%;
   height: 100%;
   background-color: #f1c3d9;
 }
-.about-me__soft-skill:nth-child(3) .about-me__progress-cont {
+.about-me__soft-skill:nth-child(5) .about-me__progress-cont {
   width: 80%;
   height: 100%;
   background-color: #f1c3d9;
 }
-.about-me__soft-skill:nth-child(4) .about-me__progress-cont {
+.about-me__soft-skill:nth-child(6) .about-me__progress-cont {
   width: 75%;
   height: 100%;
   background-color: #f1c3d9;
 }
-.about-me__soft-skill:nth-child(5) .about-me__progress-cont {
+.about-me__soft-skill:nth-child(7) .about-me__progress-cont {
   width: 60%;
   height: 100%;
   background-color: #f1c3d9;
