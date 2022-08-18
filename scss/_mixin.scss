@@ -1,11 +1,11 @@
-@mixin div-img {
+// @mixin div-img {
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
 
-@mixin hero($height, $display) {
+@mixin hero($height) {
     
     height: $height;
     box-shadow: map-get($shadows, "down");
@@ -28,7 +28,6 @@
     }
 
     .hero__down-sign{
-        display: $display;
         z-index: 1;
         
         .fa-chevron-down{   

@@ -1,82 +1,72 @@
-.services__service-card{
 
-    overflow: hidden;
-    width: 100%;
-    height: 350px;
 
-    h3{
+//     &:hover{
 
-        z-index: 1;
-        transition: all 0.3s ease-in 0.1s;
-    }
+//         transform: scale(1.05,1.05);
+//         z-index: 1;
+//         box-shadow: map-get($shadows, "lat");
+//         transition: all 0.3s ease-in;
 
-    &:hover{
+//         h3{
 
-        transform: scale(1.05,1.05);
-        z-index: 1;
-        box-shadow: map-get($shadows, "lat");
-        transition: all 0.3s ease-in;
+//             transform: scale(1.05,1.05);
+//         }
 
-        h3{
+//         &::after{
 
-            transform: scale(1.05,1.05);
-        }
+//             animation: bg-gradient 0.3s ease-in-out forwards;
+//         }
+//     }
 
-        &::after{
+//     &::after{
 
-            animation: bg-gradient 0.3s ease-in-out forwards;
-        }
-    }
+//         position: absolute;
+//         content: "";
+//         width: 300%;
+//         height: 300%;
+//         background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+//     }
 
-    &::after{
+// }
 
-        position: absolute;
-        content: "";
-        width: 300%;
-        height: 300%;
-        background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
-    }
+// @keyframes bg-gradient{
 
-}
+//     33%{
 
-@keyframes bg-gradient{
+//         background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 75%);
+//     }
 
-    33%{
+//     66%{
 
-        background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 75%);
-    }
+//         background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 50%);
+//     }
 
-    66%{
+//     100%{
 
-        background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 50%);
-    }
+//         background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 25%);
+//     }
+// }
 
-    100%{
-
-        background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 25%);
-    }
-}
-
-@for $i from 1 through 2 {
+// @for $i from 1 through 2 {
     
-    @for $j from 1 through 3 {
+//     @for $j from 1 through 3 {
         
-        @if $i == 1 {
+//         @if $i == 1 {
             
-            .services__advisory .services__service-card:nth-child(#{$j}){
+//             .services__advisory .services__service-card:nth-child(#{$j}){
 
-                cursor: pointer;
-                overflow: hidden;
-                background-image: url(../img/advisory-img-#{$j}.jpg);
-                @include div-img;
-            }
-        } @else {
+//                 cursor: pointer;
+//                 overflow: hidden;
+//                 background-image: url(../img/advisory-img-#{$j}.jpg);
+//                 @include div-img;
+//             }
+//         } @else {
 
-            .services__courses .services__service-card:nth-child(#{$j}){
+//             .services__courses .services__service-card:nth-child(#{$j}){
 
-                background-image: url(../img/course-img-#{$j}.jpg);
-                @include div-img;
-            }
-        }
-    }
-}
+//                 background-image: url(../img/course-img-#{$j}.jpg);
+//                 @include div-img;
+//             }
+//         }
+//     }
+// }
