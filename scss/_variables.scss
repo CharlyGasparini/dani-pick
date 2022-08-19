@@ -3,8 +3,11 @@ $primary: #f1c3d9;
 $secondary: #d9d9d9;
 $success: rgb(238, 124, 179);
 $navbar-dark-color: white;
+$navbar-dark-active-color: $success;
 $navbar-dark-hover-color: $success;
+// CLASS CARD
 $card-border-width: 0;
+
 // ANIMATION TRANSITIONS
 $transition: all 0.2s ease-in;
 $anim-pulse: pulse 1s infinite;
