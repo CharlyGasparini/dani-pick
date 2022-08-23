@@ -1,12 +1,11 @@
 .navbar{
-
     box-shadow: map-get($shadows, "down");
     
     .navbar__logo{
         transition: $transition;
         
         img{
-            width: 8rem;
+            width: 7rem;
         }
         
         &:hover{
@@ -15,7 +14,6 @@
     }
 
     .navbar__nav-item{
-
         &:hover{
             animation: $anim-pulse;  
             transition: $transition;

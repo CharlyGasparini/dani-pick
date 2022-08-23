@@ -1,9 +1,6 @@
 .clients{
 
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/parallax-back.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include div-img("../img/clients-bg.jpg");
 }
 
 .clients__test--signature{

@@ -1,7 +1,7 @@
-.hero{
-    @include hero(90vh);
-}
+// .hero{
+//     @include hero(calc(10vh - 86.08px), "../img/hero.jpg", none);
+// }
 
-.hero--sec{
-    @include hero(50vh);
-}
+// .hero--sec{
+//     @include hero(calc(10vh + 86.08px), "../img/hero.jpg", none);
+// }
